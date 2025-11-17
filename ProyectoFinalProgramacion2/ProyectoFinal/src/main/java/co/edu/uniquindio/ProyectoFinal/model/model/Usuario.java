@@ -1,9 +1,5 @@
 package co.edu.uniquindio.ProyectoFinal.model.model;
 
-import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.CalculoTarifasStrategy;
-import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.TarifaEconomicaStrategy;
-import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.TarifaEstandarStrategy;
-import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.TarifaExpressStrategy;
 import java.util.ArrayList;
 import java.util.List;
 
