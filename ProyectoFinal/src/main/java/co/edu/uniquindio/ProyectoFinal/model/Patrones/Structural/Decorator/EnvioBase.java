@@ -1,11 +1,13 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Structural.Decorator;
 
+import co.edu.uniquindio.ProyectoFinal.model.model.Envio;
+
 public class EnvioBase implements ServicioEnvio {
 
-    private double costoBase;
+    private Envio envio;
 
-    public EnvioBase(double costoBase) {
-        this.costoBase = costoBase;
+    public EnvioBase(Envio envio) {
+        this.envio = envio;
     }
 
     @Override
@@ -15,11 +17,15 @@ public class EnvioBase implements ServicioEnvio {
 
     @Override
     public double calcularCosto() {
-        return costoBase;
+        return envio.getCosto();
     }
 
     @Override
     public String getDetallesServicio() {
-        return "Servicio de envío estándar dentro de la ciudad";
+        return "Envío estándar:\n" +
+                "- Origen: " + envio.getOrigen().getAlias() + "\n" +
+                "- Destino: " + envio.getDestino().getAlias() + "\n" +
+                "- Peso: " + envio.getPeso() + "kg\n" +
+                "- Fecha: " + envio.getFecha();
     }
 }

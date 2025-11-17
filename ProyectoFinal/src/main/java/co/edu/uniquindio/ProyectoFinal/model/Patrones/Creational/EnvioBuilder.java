@@ -5,16 +5,21 @@ import co.edu.uniquindio.ProyectoFinal.model.model.Envio;
 import co.edu.uniquindio.ProyectoFinal.model.model.Repartidor;
 import co.edu.uniquindio.ProyectoFinal.model.model.Usuario;
 
+import java.time.LocalDate;
+
 public class EnvioBuilder {
+
     private Envio envio;
 
     public EnvioBuilder() {
         this.envio = new Envio();
+        envio.setEstado(Envio.EstadoEnvio.SOLICITADO);
     }
-
-
-    public EnvioBuilder setIdEnvio(String idEnvio) {
-        envio.setIdEnvio(idEnvio);
+    public static EnvioBuilder crear() {
+        return new EnvioBuilder();
+    }
+    public EnvioBuilder setUsuario(Usuario usuario) {
+        envio.setUsuario(usuario);
         return this;
     }
 
@@ -43,16 +48,6 @@ public class EnvioBuilder {
         return this;
     }
 
-    public EnvioBuilder setEstado(Envio.EstadoEnvio estado) {
-        envio.setEstado(estado);
-        return this;
-    }
-
-    public EnvioBuilder setUsuario(Usuario usuario) {
-        envio.setUsuario(usuario);
-        return this;
-    }
-
     public EnvioBuilder setRepartidor(Repartidor repartidor) {
         envio.setRepartidor(repartidor);
         return this;
@@ -62,23 +57,29 @@ public class EnvioBuilder {
         envio.setDescripcion(descripcion);
         return this;
     }
+    private EnvioBuilder setFecha(LocalDate fecha) {
+        envio.setFecha(fecha);
+        return this;
+    }
+
 
 
     public Envio build() {
+        if (envio.getUsuario() == null) {
+            throw new IllegalStateException("El Usuario es requerido");
+        }
         if (envio.getOrigen() == null) {
-            throw new IllegalStateException("El ORIGEN es requerido");
+            throw new IllegalStateException("El origen es requerido");
         }
         if (envio.getDestino() == null) {
-            throw new IllegalStateException("El DESTINO es requerido");
+            throw new IllegalStateException("El Destino es requerido");
         }
         if (envio.getPeso() <= 0) {
-            throw new IllegalStateException("El PESO debe ser mayor a 0");
+            throw new IllegalStateException("El peso debe ser mayor  0");
         }
 
         return envio;
     }
 
-    public static EnvioBuilder crear() {
-        return new EnvioBuilder();
-    }
+
 }

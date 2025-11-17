@@ -67,18 +67,18 @@ public class GestorDatos {
         return null;
     }
 
-    public Usuario buscarUsuarioPorId(Long id) {
+    public Usuario buscarUsuarioPorId(String id) {
         for (Usuario usuario : usuarios) {
-            if (usuario.getIdUsuario().equals(id)) {
+            if (usuario.getId().equals(id)) {
                 return usuario;
             }
         }
         return null;
     }
 
-    public Repartidor buscarRepartidorPorId(Long id) {
+    public Repartidor buscarRepartidorPorId(String id) {
         for (Repartidor repartidor : repartidores) {
-            if (Usuario.getRepartidor().equals(id)) {
+            if (repartidor.getId().equals(id)) {
                 return repartidor;
             }
         }

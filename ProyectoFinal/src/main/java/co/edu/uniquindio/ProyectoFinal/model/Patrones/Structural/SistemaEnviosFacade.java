@@ -25,7 +25,7 @@ public class SistemaEnviosFacade {
         return envio;
     }
 
-    public boolean asignarRepartidor(Long envioId, Long repartidorId) {
+    public boolean asignarRepartidor(String envioId, String repartidorId) {
         Envio envio = gestorDatos.buscarEnvioPorId(envioId);
         Repartidor repartidor = gestorDatos.buscarRepartidorPorId(repartidorId);
 
@@ -37,7 +37,4 @@ public class SistemaEnviosFacade {
         return false;
     }
 
-    public String obtenerEstadisticas() {
-        return null;
-    }
 }

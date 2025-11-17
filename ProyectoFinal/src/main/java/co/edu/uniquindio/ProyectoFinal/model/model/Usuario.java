@@ -4,6 +4,7 @@ import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.Calcul
 import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.TarifaEconomicaStrategy;
 import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.TarifaEstandarStrategy;
 import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.TarifaExpressStrategy;
+import co.edu.uniquindio.ProyectoFinal.model.Patrones.Creational.GestorDatos;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +43,7 @@ public class Usuario {
         double costo = estrategia.calcularTarifa(origen, destino, peso);
         envio.setCosto(costo);
 
-        Database.getInstance().getEnvios().add(envio);
+        GestorDatos.getInstance().getEnvios().add(envio);
         envios.add(envio);
 
         return envio;
@@ -62,7 +63,7 @@ public class Usuario {
         double costo = estrategia.calcularTarifa(origen, destino, peso);
         envio.setCosto(costo);
 
-        Database.getInstance().getEnvios().add(envio);
+        GestorDatos.getInstance().getEnvios().add(envio);
         envios.add(envio);
 
         return envio;
@@ -79,11 +80,25 @@ public class Usuario {
         }
     }
 
-    public static Object getRepartidor() {
-        return new Object();
+
+    public Repartidor getRepartidor(Envio envio) {
+        if(envio == null || !envios.contains(envio)) {
+            return null;
+        }
+        return envio.getRepartidor();
     }
 
-    public Object getIdUsuario() {
+
+    public List<Repartidor> getRepartidores() {
+        List<Repartidor> reps = new ArrayList<>();
+        for (Envio e : envios) {
+            if (e.getRepartidor() != null) {
+                reps.add(e.getRepartidor());
+            }
+        }
+        return reps;
+    }
+    public String getIdUsuario() {
         return id;
     }
 }

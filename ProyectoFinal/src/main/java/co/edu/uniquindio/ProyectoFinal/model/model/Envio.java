@@ -1,4 +1,7 @@
 package co.edu.uniquindio.ProyectoFinal.model.model;
+
+import java.time.LocalDate;
+
 public class Envio {
 
     public enum EstadoEnvio {
@@ -13,6 +16,7 @@ public class Envio {
     private Usuario usuario;
     private Repartidor repartidor;
     private String descripcion;
+    private LocalDate fecha;
 
     public Envio(Direccion o, Direccion d, double p, double v) {
         this.idEnvio = "E" + contador++;
@@ -20,7 +24,8 @@ public class Envio {
         this.destino = d;
         this.peso = p;
         this.volumen = v;
-        this.estado = EstadoEnvio.SOLICITADO; // Estado inicial
+        this.estado = EstadoEnvio.SOLICITADO;// Estado inicial
+        this.fecha =  LocalDate.now();
     }
 
     public String getDescripcion() {
@@ -111,5 +116,13 @@ public class Envio {
 
     public void actualizarEstado(EstadoEnvio e) {
         estado = e;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
     }
 }

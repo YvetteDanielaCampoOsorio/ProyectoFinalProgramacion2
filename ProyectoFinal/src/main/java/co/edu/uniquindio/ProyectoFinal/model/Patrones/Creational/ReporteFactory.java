@@ -6,23 +6,16 @@ import co.edu.uniquindio.ProyectoFinal.model.Patrones.Reportes.ReporteGenerator;
 
 public class ReporteFactory {
 
-    public ReporteGenerator crearReporte(String tipoReporte) {
-        if (tipoReporte == null || tipoReporte.isEmpty()) {
-            throw new IllegalArgumentException("Tipo de reporte no puede ser nulo o vacío");
+    public static ReporteGenerator crearReporte(String tipo) {
+
+        if (tipo == null) {
+            return null;
         }
 
-        switch (tipoReporte.toUpperCase()) {
-            case "PDF":
-                return new PDFReporte();
-
-            case "CSV":
-                return new CSVReporte();
-
-            case "EXCEL":
-                throw new UnsupportedOperationException("Reporte Excel no implementado aún");
-
-            default:
-                throw new IllegalArgumentException("Tipo de reporte no soportado: " + tipoReporte);
-        }
+        return (ReporteGenerator) switch (tipo.toUpperCase()) {
+            case "CSV" -> new CSVReporte();
+            case "PDF" -> new PDFReporte();
+            default -> throw new IllegalArgumentException("No se encontro el tipo de reporte"+tipo);
+        };
     }
 }
