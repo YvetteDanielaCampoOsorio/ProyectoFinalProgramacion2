@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.ProyectoFinal.controllers.CrearEnvioController"
+            prefWidth="500" prefHeight="500">
+
+    <children>
+
+        <Label text="Crear Envío"
+               layoutX="180" layoutY="20"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+        <Label text="Dirección Origen:" layoutX="50" layoutY="90"/>
+        <TextField fx:id="txtOrigen" layoutX="200" layoutY="85" prefWidth="230"/>
+
+        <Label text="Dirección Destino:" layoutX="50" layoutY="140"/>
+        <TextField fx:id="txtDestino" layoutX="200" layoutY="135" prefWidth="230"/>
+
+        <Label text="Peso (kg):" layoutX="50" layoutY="190"/>
+        <TextField fx:id="txtPeso" layoutX="200" layoutY="185" prefWidth="230"/>
+
+        <Label text="Tipo de Envío:" layoutX="50" layoutY="240"/>
+        <ComboBox fx:id="comboTipo" layoutX="200" layoutY="235" prefWidth="230"/>
+
+        <Label text="Pago:" layoutX="50" layoutY="290"/>
+        <ComboBox fx:id="comboPago" layoutX="200" layoutY="285" prefWidth="230"/>
+
+        <Button text="Calcular Tarifa"
+                layoutX="200" layoutY="340" prefWidth="140"
+                onAction="#handleCalcularTarifa"/>
+
+        <Label fx:id="labelTarifa" text="Tarifa: $0"
+               layoutX="200" layoutY="380"
+               style="-fx-font-size: 16px;"/>
+
+        <Button text="Crear Envío"
+                layoutX="200" layoutY="420" prefWidth="140"
+                onAction="#handleCrearEnvio"/>
+
+        <Button text="Volver"
+                layoutX="360" layoutY="420" prefWidth="80"
+                onAction="#handleVolver"/>
+    </children>
+
+</AnchorPane>

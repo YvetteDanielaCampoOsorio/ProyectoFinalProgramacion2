@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.ProyectoFinal.controllers.ReportesController"
+            prefWidth="450" prefHeight="350">
+
+    <children>
+
+        <Label text="Generar Reportes"
+               layoutX="130" layoutY="20"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+        <Label text="Tipo de Reporte:" layoutX="50" layoutY="100"/>
+        <ComboBox fx:id="comboTipoReporte"
+                  layoutX="180" layoutY="95" prefWidth="200"/>
+
+        <Button text="Generar PDF"
+                layoutX="180" layoutY="150" prefWidth="200"
+                onAction="#handleGenerarPDF"/>
+
+        <Button text="Generar CSV"
+                layoutX="180" layoutY="200" prefWidth="200"
+                onAction="#handleGenerarCSV"/>
+
+        <Button text="Volver"
+                layoutX="180" layoutY="260" prefWidth="200"
+                onAction="#handleVolver"/>
+
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.ProyectoFinal.controllers.MetricasAdminController"
+            prefWidth="600" prefHeight="450">
+
+    <children>
+
+        <Label text="Métricas del Sistema"
+               layoutX="200" layoutY="20"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+        <PieChart fx:id="graficoEnvios"
+                  layoutX="50" layoutY="80"
+                  prefWidth="500" prefHeight="300"/>
+
+        <Button text="Volver"
+                layoutX="260" layoutY="400"
+                prefWidth="100"
+                onAction="#handleVolver"/>
+
+    </children>
+
+</AnchorPane>

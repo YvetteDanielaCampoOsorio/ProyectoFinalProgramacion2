@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.ProyectoFinal.controllers.MisEnviosController"
+            prefWidth="600" prefHeight="400">
+
+    <children>
+
+        <Label text="Mis Envíos"
+               layoutX="250" layoutY="20"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+        <TableView fx:id="tablaEnvios" layoutX="50" layoutY="80" prefWidth="500" prefHeight="250">
+
+            <columns>
+                <TableColumn text="ID" prefWidth="80"/>
+                <TableColumn text="Origen" prefWidth="140"/>
+                <TableColumn text="Destino" prefWidth="140"/>
+                <TableColumn text="Estado" prefWidth="140"/>
+            </columns>
+
+        </TableView>
+
+        <Button text="Volver"
+                layoutX="260" layoutY="350"
+                prefWidth="80"
+                onAction="#handleVolver"/>
+    </children>
+
+</AnchorPane>
+

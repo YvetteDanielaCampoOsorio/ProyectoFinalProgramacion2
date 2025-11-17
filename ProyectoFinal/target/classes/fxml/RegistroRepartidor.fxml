@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.ProyectoFinal.controllers.RegistroRepartidorController"
+            prefWidth="450" prefHeight="400">
+
+    <children>
+
+        <Label text="Registrar Repartidor"
+               layoutX="140" layoutY="20"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+        <Label text="Nombre:" layoutX="50" layoutY="90"/>
+        <TextField fx:id="txtNombre" layoutX="180" layoutY="85" prefWidth="220"/>
+
+        <Label text="Correo:" layoutX="50" layoutY="140"/>
+        <TextField fx:id="txtCorreo" layoutX="180" layoutY="135" prefWidth="220"/>
+
+        <Label text="Teléfono:" layoutX="50" layoutY="190"/>
+        <TextField fx:id="txtTelefono" layoutX="180" layoutY="185" prefWidth="220"/>
+
+        <Button text="Registrar"
+                layoutX="180" layoutY="240" prefWidth="220"
+                onAction="#handleRegistrar"/>
+
+        <Button text="Volver"
+                layoutX="180" layoutY="290" prefWidth="220"
+                onAction="#handleVolver"/>
+
+    </children>
+
+</AnchorPane>

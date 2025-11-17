@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.ProyectoFinal.controllers.MenuAdminController"
+            prefWidth="450" prefHeight="350">
+
+    <children>
+
+        <Label text="Panel Administrador"
+               layoutX="130" layoutY="20"
+               style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <Button text="Usuarios"
+                layoutX="150" layoutY="90" prefWidth="150"
+                onAction="#abrirUsuarios"/>
+
+        <Button text="Repartidores"
+                layoutX="150" layoutY="140" prefWidth="150"
+                onAction="#abrirRepartidores"/>
+
+        <Button text="Envíos"
+                layoutX="150" layoutY="190" prefWidth="150"
+                onAction="#abrirEnvios"/>
+
+        <Button text="Métricas"
+                layoutX="150" layoutY="240" prefWidth="150"
+                onAction="#abrirMetricas"/>
+
+        <Button text="Cerrar Sesión"
+                layoutX="150" layoutY="290" prefWidth="150"
+                onAction="#cerrarSesion"/>
+
+    </children>
+</AnchorPane>

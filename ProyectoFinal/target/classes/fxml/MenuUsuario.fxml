@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.ProyectoFinal.controllers.MenuUsuarioController"
+            prefWidth="450" prefHeight="350">
+
+    <children>
+
+        <Label text="Menú Usuario"
+               layoutX="160" layoutY="20"
+               style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <Button text="Crear Envío"
+                layoutX="150" layoutY="90" prefWidth="150"
+                onAction="#abrirCrearEnvio"/>
+
+        <Button text="Mis Envíos"
+                layoutX="150" layoutY="140" prefWidth="150"
+                onAction="#abrirHistorial"/>
+
+        <Button text="Reportes"
+                layoutX="150" layoutY="190" prefWidth="150"
+                onAction="#abrirReportes"/>
+
+        <Button text="Cerrar Sesión"
+                layoutX="150" layoutY="240" prefWidth="150"
+                onAction="#cerrarSesion"/>
+
+    </children>
+</AnchorPane>
