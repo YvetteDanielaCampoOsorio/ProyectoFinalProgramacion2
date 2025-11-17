@@ -3,6 +3,14 @@ package co.edu.uniquindio.ProyectoFinal.model.model;
 public class Repartidor {
 
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public enum EstadoRepartidor{ACTIVO,EN_RUTA,INACTIVO}
     private String id,nombre,zona;
     private EstadoRepartidor estado=EstadoRepartidor.ACTIVO;

@@ -5,4 +5,5 @@ public class Direccion {
     public Direccion(String a,String c,String ci){alias=a;calle=c;ciudad=ci;}
     public void actualizar(String c,String ci){calle=c;ciudad=ci;}
     public String getAlias(){return alias;}
+
 }
