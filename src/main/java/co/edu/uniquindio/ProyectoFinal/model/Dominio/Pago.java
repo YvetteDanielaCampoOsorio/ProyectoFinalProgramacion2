@@ -1,4 +1,4 @@
-package co.edu.uniquindio.ProyectoFinal.model.model;
+package co.edu.uniquindio.ProyectoFinal.model.Dominio;
 public class Pago {
     public enum EstadoPago{PENDIENTE,APROBADO,RECHAZADO}
     private Envio envio;private double monto;private EstadoPago estado=EstadoPago.PENDIENTE;

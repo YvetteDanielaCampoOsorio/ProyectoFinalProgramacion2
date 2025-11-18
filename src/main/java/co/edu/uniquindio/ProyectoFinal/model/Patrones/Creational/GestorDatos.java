@@ -1,9 +1,6 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Creational;
 
-import co.edu.uniquindio.ProyectoFinal.model.model.*;
-
-import java.util.ArrayList;
-import java.util.List;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.*;
 
 public class GestorDatos {
     private static GestorDatos instance;

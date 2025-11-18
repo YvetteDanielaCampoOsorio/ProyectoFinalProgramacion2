@@ -1,9 +1,9 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Creational;
 
-import co.edu.uniquindio.ProyectoFinal.model.model.Direccion;
-import co.edu.uniquindio.ProyectoFinal.model.model.Envio;
-import co.edu.uniquindio.ProyectoFinal.model.model.Repartidor;
-import co.edu.uniquindio.ProyectoFinal.model.model.Usuario;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Direccion;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Envio;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Repartidor;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Usuario;
 
 import java.time.LocalDate;
 

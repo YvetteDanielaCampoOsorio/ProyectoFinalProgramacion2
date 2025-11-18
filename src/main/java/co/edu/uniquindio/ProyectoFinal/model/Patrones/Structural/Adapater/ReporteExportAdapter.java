@@ -1,7 +1,7 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Structural.Adapater;
 
 import co.edu.uniquindio.ProyectoFinal.model.Patrones.Reportes.ReporteGenerator;
-import co.edu.uniquindio.ProyectoFinal.model.model.Envio;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Envio;
 
 import java.util.List;
 

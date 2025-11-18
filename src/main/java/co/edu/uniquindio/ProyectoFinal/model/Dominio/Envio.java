@@ -1,4 +1,4 @@
-package co.edu.uniquindio.ProyectoFinal.model.model;
+package co.edu.uniquindio.ProyectoFinal.model.Dominio;
 
 import java.time.LocalDate;
 

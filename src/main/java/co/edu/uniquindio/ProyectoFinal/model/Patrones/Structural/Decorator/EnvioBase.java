@@ -1,6 +1,6 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Structural.Decorator;
 
-import co.edu.uniquindio.ProyectoFinal.model.model.Envio;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Envio;
 
 public class EnvioBase implements ServicioEnvio {
 

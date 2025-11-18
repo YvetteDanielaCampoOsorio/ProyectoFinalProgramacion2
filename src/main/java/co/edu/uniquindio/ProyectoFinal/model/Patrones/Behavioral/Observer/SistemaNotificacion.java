@@ -1,6 +1,6 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Observer;
 
-import co.edu.uniquindio.ProyectoFinal.model.model.Envio;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Envio;
 
 import java.util.ArrayList;
 import java.util.List;

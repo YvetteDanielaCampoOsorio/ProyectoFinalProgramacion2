@@ -1,10 +1,10 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Structural;
 
 import co.edu.uniquindio.ProyectoFinal.model.Patrones.Creational.GestorDatos;
-import co.edu.uniquindio.ProyectoFinal.model.model.Direccion;
-import co.edu.uniquindio.ProyectoFinal.model.model.Envio;
-import co.edu.uniquindio.ProyectoFinal.model.model.Repartidor;
-import co.edu.uniquindio.ProyectoFinal.model.model.Usuario;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Direccion;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Envio;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Repartidor;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Usuario;
 
 public class SistemaEnviosFacade {
     private GestorDatos gestorDatos;
@@ -25,8 +25,8 @@ public class SistemaEnviosFacade {
         return envio;
     }
 
-    public boolean asignarRepartidor(String envioId, String repartidorId) {
-        Envio envio = gestorDatos.buscarEnvioPorId(envioId);
+    public boolean asignarRepartidor(String envioid, String repartidorId) {
+        Envio envio = gestorDatos.buscarEnvioPorId(envioid);
         Repartidor repartidor = gestorDatos.buscarRepartidorPorId(repartidorId);
 
         if (envio != null && repartidor != null) {

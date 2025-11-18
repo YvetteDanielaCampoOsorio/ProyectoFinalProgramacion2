@@ -1,6 +1,6 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy;
 
-import co.edu.uniquindio.ProyectoFinal.model.model.Direccion;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Direccion;
 
 public class TarifaEstandarStrategy implements CalculoTarifasStrategy{
 

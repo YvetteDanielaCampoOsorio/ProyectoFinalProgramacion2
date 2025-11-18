@@ -1,7 +1,7 @@
 package co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Command;
 
 
-import co.edu.uniquindio.ProyectoFinal.model.model.Envio;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.Envio;
 
 public class ActualizarEstadoComando implements ComandoEnvio {
 

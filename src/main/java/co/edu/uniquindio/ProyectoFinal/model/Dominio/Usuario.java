@@ -1,4 +1,4 @@
-package co.edu.uniquindio.ProyectoFinal.model.model;
+package co.edu.uniquindio.ProyectoFinal.model.Dominio;
 
 import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.CalculoTarifasStrategy;
 import co.edu.uniquindio.ProyectoFinal.model.Patrones.Behavioral.Strategy.TarifaEconomicaStrategy;

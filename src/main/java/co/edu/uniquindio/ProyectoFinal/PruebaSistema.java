@@ -2,7 +2,7 @@ package co.edu.uniquindio.ProyectoFinal;
 
 
 import co.edu.uniquindio.ProyectoFinal.model.Patrones.Creational.GestorDatos;
-import co.edu.uniquindio.ProyectoFinal.model.model.*;
+import co.edu.uniquindio.ProyectoFinal.model.Dominio.*;
 
 public class PruebaSistema {
 
