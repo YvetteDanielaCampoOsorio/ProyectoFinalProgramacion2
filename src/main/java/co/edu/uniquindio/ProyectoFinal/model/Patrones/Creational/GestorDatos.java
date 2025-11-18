@@ -53,7 +53,6 @@ public class GestorDatos {
     }
 
 
-
     public void agregarDireccion(Direccion direccion) {
         this.direcciones.add(direccion);
     }
@@ -113,4 +112,6 @@ public class GestorDatos {
             envio.setEstado(nuevoEstado);
         }
     }
+
+
 }
