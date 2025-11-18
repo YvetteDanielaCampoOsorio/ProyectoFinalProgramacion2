@@ -10,6 +10,6 @@ public class MisEnviosController {
 
     @FXML
     public void handleVolver() {
-        SceneManager.cambiarEscena("fxml/MenuUsuario.fxml");
+        SceneManager.cambiarEscena("MenuUsuario.fxml");
     }
 }

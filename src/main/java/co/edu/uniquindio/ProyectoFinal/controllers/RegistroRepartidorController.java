@@ -17,6 +17,6 @@ public class RegistroRepartidorController {
 
     @FXML
     public void handleVolver() {
-        SceneManager.cambiarEscena("fxml/MenuAdmin.fxml");
+        SceneManager.cambiarEscena("MenuAdmin.fxml");
     }
 }

@@ -9,21 +9,21 @@ public class MenuUsuarioController {
 
     @FXML
     public void abrirCrearEnvio() throws IOException {
-        SceneManager.cambiarEscena("fxml/CrearEnvio.fxml");
+        SceneManager.cambiarEscena("CrearEnvio.fxml");
     }
 
     @FXML
     public void abrirHistorial() throws IOException {
-        SceneManager.cambiarEscena("fxml/MisEnvios.fxml");
+        SceneManager.cambiarEscena("MisEnvios.fxml");
     }
 
     @FXML
     public void abrirReportes() {
-        SceneManager.cambiarEscena("fxml/Reportes.fxml");
+        SceneManager.cambiarEscena("Reportes.fxml");
     }
 
     @FXML
     public void cerrarSesion() {
-        SceneManager.cambiarEscena("fxml/Login.fxml");
+        SceneManager.cambiarEscena("Login.fxml");
     }
 }

@@ -28,6 +28,6 @@ public class CrearEnvioController {
 
     @FXML
     public void handleVolver() {
-        SceneManager.cambiarEscena("fxml/MenuUsuario.fxml");
+        SceneManager.cambiarEscena("MenuUsuario.fxml");
     }
 }

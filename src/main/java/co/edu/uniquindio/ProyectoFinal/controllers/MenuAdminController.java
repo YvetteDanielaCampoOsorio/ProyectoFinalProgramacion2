@@ -7,27 +7,27 @@ public class MenuAdminController {
 
     @FXML
     public void abrirUsuarios() {
-        SceneManager.cambiarEscena("fxml/RegistroUsuario.fxml");
+        SceneManager.cambiarEscena("RegistroUsuario.fxml");
     }
 
     @FXML
     public void abrirRepartidores() {
-        SceneManager.cambiarEscena("fxml/RegistroRepartidor.fxml");
+        SceneManager.cambiarEscena("RegistroRepartidor.fxml");
     }
 
     @FXML
     public void abrirEnvios() {
-        SceneManager.cambiarEscena("fxml/CrearEnvio.fxml");
+        SceneManager.cambiarEscena("CrearEnvio.fxml");
     }
 
     @FXML
     public void abrirMetricas() {
-        SceneManager.cambiarEscena("fxml/MetricasAdmin.fxml");
+        SceneManager.cambiarEscena("MetricasAdmin.fxml");
     }
 
     @FXML
     public void cerrarSesion() {
-        SceneManager.cambiarEscena("fxml/Login.fxml");
+        SceneManager.cambiarEscena("Login.fxml");
     }
 }
 
